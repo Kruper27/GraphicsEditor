@@ -83,10 +83,10 @@ class Resizer extends React.Component {
 
     renderLineResizer() {
         return (
-            <React.Fragment>
+            <>
                 {this.renderCircle('startX', 'startY')}
                 {this.renderCircle('endX', 'endY')}
-            </React.Fragment>
+            </>
         )
     }
 
@@ -95,7 +95,7 @@ class Resizer extends React.Component {
         const cursor = object.getResizer(paramX, paramY)
 
         return (
-            <React.Fragment>
+            <>
                 <circle
                     cx={object[paramX]}
                     cy={object[paramY]}
@@ -108,7 +108,7 @@ class Resizer extends React.Component {
                     }}
                     cursor={cursor}
                 />
-            </React.Fragment>
+            </>
         )
     }
 
@@ -195,7 +195,7 @@ class Resizer extends React.Component {
 
     renderRectResizer() {
         return (
-            <React.Fragment>
+            <>
                 {this.renderRectLine('startX')}
                 {this.renderRectLine('startY')}
                 {this.renderRectLine('endX')}
@@ -204,7 +204,7 @@ class Resizer extends React.Component {
                 {this.renderCircle('endX', 'endY')}
                 {this.renderCircle('endX', 'startY')}
                 {this.renderCircle('startX', 'endY')}
-            </React.Fragment>
+            </>
         )
     }
 

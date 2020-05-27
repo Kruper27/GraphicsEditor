@@ -53,7 +53,7 @@ class SaveSvg extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
+      <>
         <button
           title="Save as SVG"
           className="btn btn-light"
@@ -72,7 +72,7 @@ class SaveSvg extends React.Component {
         >
           DOWNLOAD
         </a>
-      </React.Fragment>
+      </>
     )
   }
 }

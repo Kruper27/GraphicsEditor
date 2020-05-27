@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Menu from './Menu/forMenu'
+import Menu from './Menu/Menu'
 import Canvas from './Canvas'
 
 const App = () => (
-  <React.Fragment>
+  <>
     <div className="d-none d-md-block container-fluid" >
       <div className="row">
           <div className="col-md-10">
@@ -15,7 +15,7 @@ const App = () => (
           </div>
       </div>
     </div>
-  </React.Fragment>
+  </>
 )
 
 export default App

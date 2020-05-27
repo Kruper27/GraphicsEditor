@@ -48,7 +48,7 @@ class ColorPicker extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
+      <>
         <h6>Color</h6>
         <BlockPicker
           triangle="hide"
@@ -76,7 +76,7 @@ class ColorPicker extends React.Component {
             <SketchPicker {...this.getColorProps()} />
           </PopoverBody>
         </Popover>
-      </React.Fragment>
+      </>
     )
   }
 }

@@ -35,7 +35,7 @@ class KeyControls extends React.Component {
     const handleSelectAll = event => this.handleSelectAll(event)
 
     return (
-      <React.Fragment>
+      <>
         <KeyHandler
           keyEventName={KEYDOWN}
           keyValue={'z'}
@@ -66,7 +66,7 @@ class KeyControls extends React.Component {
           keyValue={'A'}
           onKeyHandle={handleSelectAll}
         />
-      </React.Fragment>
+      </>
     )
   }
 }

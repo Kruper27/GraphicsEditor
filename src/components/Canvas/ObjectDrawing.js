@@ -178,7 +178,7 @@ class ObjectDrawing extends React.Component {
         const object = this.getObject()
 
         return (
-            <React.Fragment>
+            <>
                 <line
                     x1={object.startX}
                     y1={object.startY}
@@ -190,7 +190,7 @@ class ObjectDrawing extends React.Component {
                 />
                 {this.getResizer()}
                 {this.renderMoveableLine()}
-            </React.Fragment>
+            </>
         )
     }
 
@@ -198,7 +198,7 @@ class ObjectDrawing extends React.Component {
         const object = this.getObject()
 
         return (
-            <React.Fragment>
+            <>
                 <rect
                     x={object.x}
                     y={object.y}
@@ -209,7 +209,7 @@ class ObjectDrawing extends React.Component {
                 />
                 {this.getResizer()}
                 {this.renderMoveableRect()}
-            </React.Fragment>
+            </>
         )
     }
 
@@ -228,7 +228,7 @@ class ObjectDrawing extends React.Component {
         const object = this.getObject()
 
         return (
-            <React.Fragment>
+            <>
                 <rect
                     x={object.x}
                     y={object.y}
@@ -239,7 +239,7 @@ class ObjectDrawing extends React.Component {
                 {this.renderGroupChildren()}
                 {this.getResizer()}
                 {this.renderMoveableRect()}
-            </React.Fragment>
+            </>
         )
     }
 
@@ -247,7 +247,7 @@ class ObjectDrawing extends React.Component {
         const object = this.getObject()
 
         return (
-            <React.Fragment>
+            <>
                 <ellipse
                     cx={object.centerX}
                     cy={object.centerY}
@@ -258,7 +258,7 @@ class ObjectDrawing extends React.Component {
                 />
                 {this.getResizer()}
                 {this.renderMoveableRect()}
-            </React.Fragment>
+            </>
         )
     }
 

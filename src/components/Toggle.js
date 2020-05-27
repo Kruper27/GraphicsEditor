@@ -20,7 +20,8 @@ class Toggle extends React.Component {
 	}
 
 	renderRadioOptions() {
-		return this.props.options.map(option => (
+		const {options} = this.props
+		return options.map(option => (
 			<div key={option.key} className="custom-control custom-radio">
 				<input
 					className="custom-control-input"
@@ -41,11 +42,12 @@ class Toggle extends React.Component {
 	}
 
 	renderRadioGroup() {
-		return <React.Fragment>{this.renderRadioOptions()}</React.Fragment>;
+		return <>{this.renderRadioOptions()}</>;
 	}
 
 	renderDropMenuOptions() {
-		return this.props.options.map(option => (
+		const {options} = this.props
+		return options.map(option => (
 			<option key={option.key} value={option.key}>
 				{option.value}
 			</option>
