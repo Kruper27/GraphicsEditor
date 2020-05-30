@@ -1,7 +1,6 @@
 /* eslint-env browser */
 import React from 'react'
 import PropTypes from 'prop-types'
-import randomWord from 'sillyname'
 import {connect} from 'react-redux'
 
 import {SVG_ID} from '../../../constants'
@@ -46,7 +45,7 @@ class SaveSvg extends React.Component {
 
   download() {
     this.link.setAttribute('href', SaveSvg.getDataURI())
-    this.link.setAttribute('download', `${randomWord()}.svg`)
+    this.link.setAttribute('download', `Result.svg`)
     this.link.click()
     this.props.done()
   }
